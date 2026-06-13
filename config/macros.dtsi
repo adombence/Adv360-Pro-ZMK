@@ -222,3 +222,102 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+   Mac_a_Acute: Mac_a_Acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp E &kp N1>,
+        <&macro_release &kp LALT>;
+    label = "MAC_a_ACUTE";
+    display-name = "MAC_a_ACUTE";
+  };
+
+  Mac_e_Acute: Mac_e_Acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp E &kp N9>,
+        <&macro_release &kp LALT>;
+    label = "MAC_e_ACUTE";
+    display-name = "MAC_e_ACUTE";
+  };
+
+  Mac_i_Acute: Mac_i_Acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp E &kp D>,
+        <&macro_release &kp LALT>;
+    label = "MAC_i_ACUTE";
+    display-name = "MAC_i_ACUTE";
+  };
+
+  Mac_o_Acute: Mac_o_Acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp N3>,
+        <&macro_release &kp LALT>;
+    label = "MAC_o_ACUTE";
+    display-name = "MAC_o_ACUTE";
+  };
+
+  Mac_u_Acute: Mac_u_Acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp A>,
+        <&macro_release &kp LALT>;
+    label = "MAC_u_ACUTE";
+    display-name = "MAC_u_ACUTE";
+  };
+
+  Mac_o_Umlaut: Mac_o_Umlaut {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp N6>,
+        <&macro_release &kp LALT>;
+    label = "MAC_o_UMLAUT";
+    display-name = "MAC_o_UMLAUT";
+  };
+
+  Mac_u_Umlaut: Mac_u_Umlaut {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp C>,
+        <&macro_release &kp LALT>;
+    label = "MAC_u_UMLAUT";
+    display-name = "MAC_u_UMLAUT";
+  };
+
+  Mac_o_Long: Mac_o_Long {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N5 &kp N1>,
+        <&macro_release &kp LALT>;
+    label = "MAC_o_LONG";
+    display-name = "MAC_o_LONG";
+  };
+
+  Mac_u_Long: Mac_u_Long {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N7 &kp N1>,
+        <&macro_release &kp LALT>;
+    label = "MAC_u_LONG";
+    display-name = "MAC_u_LONG";
+  };
