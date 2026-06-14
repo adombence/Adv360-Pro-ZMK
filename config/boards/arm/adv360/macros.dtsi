@@ -137,13 +137,13 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp LC(UP_ARROW)>;
-      display-name = "Mac Show All Windoes";
+      display-name = "Mac Show All Windows";
   };
 
   Mac_Snip_Tool: Mac_Snip {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp LC(LG(LS(NUMBER_4)))>;
+      bindings = <&kp LC(LG(LS(N4)))>;
       display-name = "Mac Screen Snip";
   };
 
