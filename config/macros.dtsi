@@ -272,8 +272,8 @@
   mac_e_acute_upper: mac_e_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <30>;
+    tap-ms = <30>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp C &kp N9>,
