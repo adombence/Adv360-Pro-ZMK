@@ -272,9 +272,15 @@
   mac_e_acute_upper: mac_e_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&macro_tap &kp C>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0>,
+        <&macro_tap &kp N0>,
+        <&macro_tap &kp C>,
+        <&macro_tap &kp N9>,
+        <&macro_release &kp LALT>;
     label = "MAC_E_ACUTE_UPPER";
     display-name = "MAC_E_ACUTE_UPPER";
   };
