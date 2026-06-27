@@ -256,90 +256,266 @@
     mods = <(MOD_LSFT | MOD_RSFT)>;
   };
 
-  Mac_e_Acute: Mac_e_Acute {
+  mac_e_acute_lower: mac_e_acute_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp E &kp N9>,
         <&macro_release &kp LALT>;
-    label = "MAC_e_ACUTE";
-    display-name = "MAC_e_ACUTE";
+    label = "MAC_E_ACUTE";
+    display-name = "MAC_E_ACUTE";
   };
 
-  Mac_i_Acute: Mac_i_Acute {
+  mac_e_acute_upper: mac_e_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp C &kp N9>,
+        <&macro_release &kp LALT>;
+    label = "MAC_E_ACUTE";
+    display-name = "MAC_E_ACUTE";
+  };
+
+  mac_e_acute: mac_e_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_e_acute_lower>, <&mac_e_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_i_acute_lower: mac_i_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp E &kp D>,
         <&macro_release &kp LALT>;
-    label = "MAC_i_ACUTE";
-    display-name = "MAC_i_ACUTE";
+    label = "MAC_I_ACUTE_LOWER";
+    display-name = "MAC_I_ACUTE_LOWER";
   };
 
-  Mac_o_Acute: Mac_o_Acute {
+  mac_i_acute_upper: mac_i_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp C &kp D>,
+        <&macro_release &kp LALT>;
+    label = "MAC_I_ACUTE_UPPER";
+    display-name = "MAC_I_ACUTE_UPPER";
+  };
+
+  mac_i_acute: mac_i_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_i_acute_lower>, <&mac_i_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_o_acute_lower: mac_o_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp N3>,
         <&macro_release &kp LALT>;
-    label = "MAC_o_ACUTE";
-    display-name = "MAC_o_ACUTE";
+    label = "MAC_O_ACUTE_LOWER";
+    display-name = "MAC_O_ACUTE_LOWER";
   };
 
-  Mac_u_Acute: Mac_u_Acute {
+  mac_o_acute_upper: mac_o_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp N3>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_ACUTE_UPPER";
+    display-name = "MAC_O_ACUTE_UPPER";
+  };
+
+  mac_o_acute: mac_o_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_o_acute_lower>, <&mac_o_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_u_acute_lower: mac_u_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp A>,
         <&macro_release &kp LALT>;
-    label = "MAC_u_ACUTE";
-    display-name = "MAC_u_ACUTE";
+    label = "MAC_U_ACUTE_LOWER";
+    display-name = "MAC_U_ACUTE_LOWER";
   };
 
-  Mac_o_Umlaut: Mac_o_Umlaut {
+  mac_u_acute_upper: mac_u_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp A>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_ACUTE_UPPER";
+    display-name = "MAC_U_ACUTE_UPPER";
+  };
+
+  mac_u_acute: mac_u_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_u_acute_lower>, <&mac_u_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_o_umlaut_lower: mac_o_umlaut_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp N6>,
         <&macro_release &kp LALT>;
-    label = "MAC_o_UMLAUT";
-    display-name = "MAC_o_UMLAUT";
+    label = "MAC_O_UMLAUT_LOWER";
+    display-name = "MAC_O_UMLAUT_LOWER";
   };
 
-  Mac_u_Umlaut: Mac_u_Umlaut {
+  mac_o_umlaut_upper: mac_o_umlaut_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp N6>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_UMLAUT_UPPER";
+    display-name = "MAC_O_UMLAUT_UPPER";
+  };
+
+  mac_o_umlaut: mac_o_umlaut {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_o_umlaut_lower>, <&mac_o_umlaut_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_u_umlaut_lower: mac_u_umlaut_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp C>,
         <&macro_release &kp LALT>;
-    label = "MAC_u_UMLAUT";
-    display-name = "MAC_u_UMLAUT";
+    label = "MAC_U_UMLAUT_LOWER";
+    display-name = "MAC_U_UMLAUT_LOWER";
   };
 
-  Mac_o_Long: Mac_o_Long {
+  mac_u_umlaut_upper: mac_u_umlaut_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp C>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_UMLAUT_UPPER";
+    display-name = "MAC_U_UMLAUT_UPPER";
+  };
+
+  mac_u_umlaut: mac_u_umlaut {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_u_umlaut_lower>, <&mac_u_umlaut_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_o_long_lower: mac_o_long_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N1 &kp N5 &kp N1>,
         <&macro_release &kp LALT>;
-    label = "MAC_o_LONG";
-    display-name = "MAC_o_LONG";
+    label = "MAC_O_LONG_LOWER";
+    display-name = "MAC_O_LONG_LOWER";
   };
 
-  Mac_u_Long: Mac_u_Long {
+  mac_o_long_upper: mac_o_long_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N5 &kp N0>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_LONG_UPPER";
+    display-name = "MAC_O_LONG_UPPER";
+  };
+
+  mac_o_long: mac_o_long {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_o_long_lower>, <&mac_o_long_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  mac_u_long_lower: mac_u_long_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N1 &kp N7 &kp N1>,
         <&macro_release &kp LALT>;
-    label = "MAC_u_LONG";
-    display-name = "MAC_u_LONG";
+    label = "MAC_U_LONG_LOWER";
+    display-name = "MAC_U_LONG_LOWER";
+  };
+
+  mac_u_long_upper: mac_u_long_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N7 &kp N0>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_LONG_UPPER";
+    display-name = "MAC_U_LONG_UPPER";
+  };
+
+  mac_u_long: mac_u_long {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_u_long_lower>, <&mac_u_long_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
   };

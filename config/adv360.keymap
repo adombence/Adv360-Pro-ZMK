@@ -84,10 +84,10 @@
       display-name = "Hu mac";
       bindings = <
         &trans &trans        &trans &trans       &trans &trans &trans                                                           &trans &trans &trans        &trans       &trans       &trans           &trans
-        &trans &trans        &trans &Mac_e_Acute &trans &trans &trans                                                           &none  &trans &Mac_u_Acute  &Mac_i_Acute &Mac_o_Acute &Mac_o_Umlaut    &trans
-        &trans &mac_a_acute  &trans &trans       &trans &trans &none           &trans &trans &trans &trans                      &none  &trans &trans        &trans       &trans       &Mac_o_Long      &Mac_u_Long
+        &trans &trans        &trans &mac_e_acute &trans &trans &trans                                                           &none  &trans &mac_u_acute  &mac_i_acute &mac_o_Acute &mac_o_umlaut    &trans
+        &trans &mac_a_acute  &trans &trans       &trans &trans &none           &trans &trans &trans &trans                      &none  &trans &trans        &trans       &trans       &mac_o_long      &Mac_u_Long
         &trans &trans        &trans &trans       &trans &trans                        &trans &trans                                    &trans &trans        &trans       &trans       &trans           &trans
-        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &Mac_u_Umlaut    &trans
+        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &mac_u_umlaut    &trans
       >;
     };
   };
