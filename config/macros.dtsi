@@ -223,32 +223,37 @@
     display-name = "Double Click";
   };
 
-   Mac_a_Acute: Mac_a_Acute {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
-    bindings =
-        <&macro_press &kp LALT>,
-        <&macro_tap &kp N0 &kp N0 &kp E &kp N1>,
-        <&macro_release &kp LALT>;
-    label = "MAC_a_ACUTE";
-    display-name = "MAC_a_ACUTE";
-  };
-
-  Mac_A_Acute: Mac_A_Acute {
+  mac_a_acute_lower: macro_mac_a_acute_lower {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       wait-ms = <40>;
       tap-ms = <40>;
+      bindings =
+          <&macro_press &kp LALT>,
+          <&macro_tap &kp N0 &kp N0 &kp E &kp N1>,
+          <&macro_release &kp LALT>;
+      label = "MAC_A_ACUTE_LOWER";
+      display-name = "MAC_A_ACUTE_LOWER";
+  };
 
+  mac_a_acute_upper: macro_mac_a_acute_upper {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <40>;
+      tap-ms = <40>;
       bindings =
           <&macro_press &kp LALT>,
           <&macro_tap &kp N0 &kp N0 &kp C &kp N1>,
           <&macro_release &kp LALT>;
+      label = "MAC_A_ACUTE_UPPER";
+      display-name = "MAC_A_ACUTE_UPPER";
+  };
 
-      label = "MAC_A_ACUTE";
-      display-name = "MAC_A_ACUTE";
+    mac_a_acute: mac_a_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_a_acute_lower>, <&mac_a_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
   };
 
   Mac_e_Acute: Mac_e_Acute {
