@@ -249,7 +249,7 @@
       display-name = "MAC_A_ACUTE_UPPER";
   };
 
-    mac_a_acute: mac_a_acute {
+  mac_a_acute: mac_a_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&mac_a_acute_lower>, <&mac_a_acute_upper>;
