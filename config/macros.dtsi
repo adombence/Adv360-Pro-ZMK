@@ -274,10 +274,7 @@
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings =
-        <&macro_press &kp LALT>,
-        <&macro_tap &kp N0 &kp N0 &kp C &kp N9>,
-        <&macro_release &kp LALT>;
+    bindings = <&macro_tap &kp X>;
     label = "MAC_E_ACUTE";
     display-name = "MAC_E_ACUTE";
   };
