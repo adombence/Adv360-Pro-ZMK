@@ -265,8 +265,8 @@
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp E &kp N9>,
         <&macro_release &kp LALT>;
-    label = "MAC_E_ACUTE";
-    display-name = "MAC_E_ACUTE";
+    label = "MAC_E_ACUTE_LOWER";
+    display-name = "MAC_E_ACUTE_LOWER";
   };
 
   mac_e_acute_upper: mac_e_acute_upper {
@@ -274,9 +274,9 @@
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&macro_tap &kp X>;
-    label = "MAC_E_ACUTE";
-    display-name = "MAC_E_ACUTE";
+    bindings = <&macro_tap &kp C>;
+    label = "MAC_E_ACUTE_UPPER";
+    display-name = "MAC_E_ACUTE_UPPER";
   };
 
   mac_e_acute: mac_e_acute {
