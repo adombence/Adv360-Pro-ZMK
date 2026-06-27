@@ -226,8 +226,8 @@
   mac_a_acute_lower: macro_mac_a_acute_lower {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      wait-ms = <40>;
-      tap-ms = <40>;
+      wait-ms = <20>;
+      tap-ms = <20>;
       bindings =
           <&macro_press &kp LALT>,
           <&macro_tap &kp N0 &kp N0 &kp E &kp N1>,
@@ -239,8 +239,8 @@
   mac_a_acute_upper: macro_mac_a_acute_upper {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      wait-ms = <40>;
-      tap-ms = <40>;
+      wait-ms = <20>;
+      tap-ms = <20>;
       bindings =
           <&macro_press &kp LALT>,
           <&macro_tap &kp N0 &kp N0 &kp C &kp N1>,
@@ -259,8 +259,8 @@
   mac_e_acute_lower: mac_e_acute_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp E &kp N9>,
@@ -272,8 +272,8 @@
   mac_e_acute_upper: mac_e_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp C &kp N9>,
@@ -292,8 +292,8 @@
   mac_i_acute_lower: mac_i_acute_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp E &kp D>,
@@ -305,8 +305,8 @@
   mac_i_acute_upper: mac_i_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp C &kp D>,
@@ -325,8 +325,8 @@
   mac_o_acute_lower: mac_o_acute_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp N3>,
@@ -338,8 +338,8 @@
   mac_o_acute_upper: mac_o_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp D &kp N3>,
@@ -358,8 +358,8 @@
   mac_u_acute_lower: mac_u_acute_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp A>,
@@ -371,8 +371,8 @@
   mac_u_acute_upper: mac_u_acute_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp D &kp A>,
@@ -391,8 +391,8 @@
   mac_o_umlaut_lower: mac_o_umlaut_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp N6>,
@@ -404,8 +404,8 @@
   mac_o_umlaut_upper: mac_o_umlaut_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp D &kp N6>,
@@ -424,8 +424,8 @@
   mac_u_umlaut_lower: mac_u_umlaut_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp F &kp C>,
@@ -437,8 +437,8 @@
   mac_u_umlaut_upper: mac_u_umlaut_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp D &kp C>,
@@ -457,8 +457,8 @@
   mac_o_long_lower: mac_o_long_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N1 &kp N5 &kp N1>,
@@ -470,8 +470,8 @@
   mac_o_long_upper: mac_o_long_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N1 &kp N5 &kp N0>,
@@ -490,8 +490,8 @@
   mac_u_long_lower: mac_u_long_lower {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N1 &kp N7 &kp N1>,
@@ -503,8 +503,8 @@
   mac_u_long_upper: mac_u_long_upper {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
+    wait-ms = <20>;
+    tap-ms = <20>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N1 &kp N7 &kp N0>,
