@@ -226,12 +226,29 @@
    Mac_a_Acute: Mac_a_Acute {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press &kp LALT>,
         <&macro_tap &kp N0 &kp N0 &kp E &kp N1>,
         <&macro_release &kp LALT>;
     label = "MAC_a_ACUTE";
     display-name = "MAC_a_ACUTE";
+  };
+
+  Mac_A_Acute: Mac_A_Acute {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <40>;
+      tap-ms = <40>;
+
+      bindings =
+          <&macro_press &kp LALT>,
+          <&macro_tap &kp N0 &kp N0 &kp C &kp N1>,
+          <&macro_release &kp LALT>;
+
+      label = "MAC_A_ACUTE";
+      display-name = "MAC_A_ACUTE";
   };
 
   Mac_e_Acute: Mac_e_Acute {
