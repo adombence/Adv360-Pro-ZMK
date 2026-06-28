@@ -41,6 +41,7 @@
       };
 
       #include "macros.dtsi"
+      #include "hu_mac.dtsi"
       #include "version.dtsi"
 
       hm: homerow_mods {
@@ -100,11 +101,11 @@
     hu_mac_layer {
       display-name = "Hu mac";
       bindings = <
-        &trans &trans        &trans &trans       &trans &trans &trans                                                           &trans &trans &trans        &trans       &trans       &trans           &trans
-        &trans &trans        &trans &mac_e_acute &trans &trans &trans                                                           &none  &trans &mac_u_acute  &mac_i_acute &mac_o_acute &mac_o_umlaut    &trans
-        &trans &mac_a_acute  &trans &trans       &trans &trans &none           &trans &trans &trans &trans                      &none  &trans &trans        &trans       &trans       &mac_o_long      &mac_u_long
-        &trans &trans        &trans &trans       &trans &trans                        &trans &trans                                    &trans &trans        &trans       &trans       &trans           &trans
-        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &mac_u_umlaut    &trans
+        &trans &trans        &trans &trans       &trans &trans &trans                                                           &trans &trans &trans        &trans       &trans       &trans               &trans
+        &trans &trans        &trans &mac_e_acute &trans &trans &trans                                                           &none  &trans &mac_u_acute  &mac_i_acute &mac_o_acute &mac_o_umlaut        &trans
+        &trans &mac_a_acute  &trans &trans       &trans &trans &none           &trans &trans &trans &trans                      &none  &trans &trans        &trans       &trans       &mac_o_hungarumlaut  &mac_u_hungarumlaut
+        &trans &trans        &trans &trans       &trans &trans                        &trans &trans                                    &trans &trans        &trans       &trans       &trans               &trans
+        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &mac_u_umlaut        &trans
       >;
     };
   };

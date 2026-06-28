@@ -1,0 +1,317 @@
+  // á — U+00E1, LATIN SMALL LETTER A WITH ACUTE
+  mac_a_acute_lower: macro_mac_a_acute_lower {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <20>;
+      tap-ms = <20>;
+      bindings =
+          <&macro_press &kp LALT>,
+          <&macro_tap &kp N0 &kp N0 &kp E &kp N1>,
+          <&macro_release &kp LALT>;
+      label = "MAC_A_ACUTE_LOWER";
+      display-name = "MAC_A_ACUTE_LOWER";
+  };
+
+  // Á — U+00C1, LATIN CAPITAL LETTER A WITH ACUTE
+  mac_a_acute_upper: macro_mac_a_acute_upper {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <20>;
+      tap-ms = <20>;
+      bindings =
+          <&macro_press &kp LALT>,
+          <&macro_tap &kp N0 &kp N0 &kp C &kp N1>,
+          <&macro_release &kp LALT>;
+      label = "MAC_A_ACUTE_UPPER";
+      display-name = "MAC_A_ACUTE_UPPER";
+  };
+
+  mac_a_acute: mac_a_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_a_acute_lower>, <&mac_a_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // é — U+00E9, LATIN SMALL LETTER E WITH ACUTE
+  mac_e_acute_lower: mac_e_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp E &kp N9>,
+        <&macro_release &kp LALT>;
+    label = "MAC_E_ACUTE_LOWER";
+    display-name = "MAC_E_ACUTE_LOWER";
+  };
+
+  // É — U+00C9, LATIN CAPITAL LETTER E WITH ACUTE
+  mac_e_acute_upper: mac_e_acute_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0>,
+        <&macro_tap &kp N0>,
+        <&macro_tap &kp C>,
+        <&macro_tap &kp N9>,
+        <&macro_release &kp LALT>;
+    label = "MAC_E_ACUTE_UPPER";
+    display-name = "MAC_E_ACUTE_UPPER";
+  };
+
+  mac_e_acute: mac_e_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_e_acute_lower>, <&mac_e_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // í — U+00ED, LATIN SMALL LETTER I WITH ACUTE
+  mac_i_acute_lower: mac_i_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp E &kp D>,
+        <&macro_release &kp LALT>;
+    label = "MAC_I_ACUTE_LOWER";
+    display-name = "MAC_I_ACUTE_LOWER";
+  };
+
+  // Í — U+00CD, LATIN CAPITAL LETTER I WITH ACUTE
+  mac_i_acute_upper: mac_i_acute_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp C &kp D>,
+        <&macro_release &kp LALT>;
+    label = "MAC_I_ACUTE_UPPER";
+    display-name = "MAC_I_ACUTE_UPPER";
+  };
+
+  mac_i_acute: mac_i_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_i_acute_lower>, <&mac_i_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // ó — U+00F3, LATIN SMALL LETTER O WITH ACUTE
+  mac_o_acute_lower: mac_o_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp N3>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_ACUTE_LOWER";
+    display-name = "MAC_O_ACUTE_LOWER";
+  };
+
+  // Ó — U+00D3, LATIN CAPITAL LETTER O WITH ACUTE
+  mac_o_acute_upper: mac_o_acute_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp N3>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_ACUTE_UPPER";
+    display-name = "MAC_O_ACUTE_UPPER";
+  };
+
+  mac_o_acute: mac_o_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_o_acute_lower>, <&mac_o_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // ú — U+00FA, LATIN SMALL LETTER U WITH ACUTE
+  mac_u_acute_lower: mac_u_acute_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp A>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_ACUTE_LOWER";
+    display-name = "MAC_U_ACUTE_LOWER";
+  };
+
+  // Ú — U+00DA, LATIN CAPITAL LETTER U WITH ACUTE
+  mac_u_acute_upper: mac_u_acute_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp A>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_ACUTE_UPPER";
+    display-name = "MAC_U_ACUTE_UPPER";
+  };
+
+  mac_u_acute: mac_u_acute {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_u_acute_lower>, <&mac_u_acute_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // ö — U+00F6, LATIN SMALL LETTER O WITH DIAERESIS
+  mac_o_umlaut_lower: mac_o_umlaut_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp N6>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_UMLAUT_LOWER";
+    display-name = "MAC_O_UMLAUT_LOWER";
+  };
+
+  // Ö — U+00D6, LATIN CAPITAL LETTER O WITH DIAERESIS
+  mac_o_umlaut_upper: mac_o_umlaut_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp N6>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_UMLAUT_UPPER";
+    display-name = "MAC_O_UMLAUT_UPPER";
+  };
+
+  mac_o_umlaut: mac_o_umlaut {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_o_umlaut_lower>, <&mac_o_umlaut_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // ü — U+00FC, LATIN SMALL LETTER U WITH DIAERESIS
+  mac_u_umlaut_lower: mac_u_umlaut_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp F &kp C>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_UMLAUT_LOWER";
+    display-name = "MAC_U_UMLAUT_LOWER";
+  };
+
+  // Ü — U+00DC, LATIN CAPITAL LETTER U WITH DIAERESIS
+  mac_u_umlaut_upper: mac_u_umlaut_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N0 &kp D &kp C>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_UMLAUT_UPPER";
+    display-name = "MAC_U_UMLAUT_UPPER";
+  };
+
+  mac_u_umlaut: mac_u_umlaut {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_u_umlaut_lower>, <&mac_u_umlaut_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // ő — U+0151, LATIN SMALL LETTER O WITH DOUBLE ACUTE
+  mac_o_hungarumlaut_lower: mac_o_hungarumlaut_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N5 &kp N1>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_HUNGARUMLAUT_LOWER";
+    display-name = "MAC_O_HUNGARUMLAUT_LOWER";
+  };
+
+  // Ő — U+0150, LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
+  mac_o_hungarumlaut_upper: mac_o_hungarumlaut_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N5 &kp N0>,
+        <&macro_release &kp LALT>;
+    label = "MAC_O_HUNGARUMLAUT_UPPER";
+    display-name = "MAC_O_HUNGARUMLAUT_UPPER";
+  };
+
+  mac_o_hungarumlaut: mac_o_hungarumlaut {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_o_hungarumlaut_lower>, <&mac_o_hungarumlaut_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
+
+  // ű — U+0171, LATIN SMALL LETTER U WITH DOUBLE ACUTE
+  mac_u_hungarumlaut_lower: mac_u_hungarumlaut_lower {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N7 &kp N1>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_HUNGARUMLAUT_LOWER";
+    display-name = "MAC_U_HUNGARUMLAUT_LOWER";
+  };
+
+  // Ű — U+0170, LATIN CAPITAL LETTER U WITH DOUBLE ACUTE
+  mac_u_hungarumlaut_upper: mac_u_hungarumlaut_upper {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp N0 &kp N1 &kp N7 &kp N0>,
+        <&macro_release &kp LALT>;
+    label = "MAC_U_HUNGARUMLAUT_UPPER";
+    display-name = "MAC_U_HUNGARUMLAUT_UPPER";
+  };
+
+  mac_u_hungarumlaut: mac_u_hungarumlaut {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_u_hungarumlaut_lower>, <&mac_u_hungarumlaut_upper>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+  };
