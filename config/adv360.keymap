@@ -16,61 +16,6 @@
 
 / {
     behaviors {
-      select_profile_1: select_profile_1 {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          wait-ms = <20>;
-          tap-ms = <20>;
-          bindings =
-              <&bt BT_SEL 0>,
-              <&to BASE>;
-          display-name = "Select Profile 1";
-      };
-
-      select_profile_2: select_profile_2 {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          wait-ms = <20>;
-          tap-ms = <20>;
-          bindings =
-              <&bt BT_SEL 1>,
-              <&to WIN_DEFAULT>;
-          display-name = "Select Profile 2";
-      };
-
-      select_profile_3: select_profile_3 {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          wait-ms = <20>;
-          tap-ms = <20>;
-          bindings =
-              <&bt BT_SEL 2>,
-              <&to BASE>;
-          display-name = "Select Profile 3";
-      };
-
-      select_profile_4: select_profile_4 {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          wait-ms = <20>;
-          tap-ms = <20>;
-          bindings =
-              <&bt BT_SEL 3>,
-              <&to BASE>;
-          display-name = "Select Profile 4";
-      };
-
-      select_profile_5: select_profile_5 {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          wait-ms = <20>;
-          tap-ms = <20>;
-          bindings =
-              <&bt BT_SEL 4>,
-              <&to BASE>;
-          display-name = "Select Profile 5";
-      };
-
       hu_lt: hu_layer_tap {
         compatible = "zmk,behavior-hold-tap";
         label = "HU_LAYER_TAP";
@@ -149,11 +94,11 @@
     mod {
       display-name = "Mod";
       bindings = <
-        &none           &select_profile_1 &select_profile_2 &select_profile_3 &select_profile_4 &select_profile_5 &none                                                                              &trans                 &none        &none        &none        &none &none &none
-        &none           &none             &none             &none             &none             &none             &bootloader                                                                        &bootloader            &none        &none        &none        &none &none &none
-        &studio_unlock  &none             &none             &none             &none             &none             &none                   &none &none &bt BT_CLR &none                               &stp STP_BAT           &none        &none        &none        &none &none &none
-        &none           &none             &none             &none             &macro_ver        &none                                           &none &none                                                                 &none        &none        &none        &none &none &none
-        &none           &none             &none             &none             &none                                           &none &none &none &none &bl BL_TOG &rgb_ug RGB_TOG                                                         &bl BL_INC   &bl BL_DEC   &none &none &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                              &trans                 &none        &none        &none        &none &none &none
+        &none &none        &tog WIN_DEFAULT        &none        &none        &none        &bootloader                                                                        &bootloader            &none        &none        &none        &none &none &none
+        &studio_unlock     &none        &none        &none        &none        &none        &none           &none &none &bt BT_CLR &none                          &stp STP_BAT           &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &macro_ver   &none                                           &none &none                                                            &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &none                                            &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                         &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
     hu_mac_layer {
