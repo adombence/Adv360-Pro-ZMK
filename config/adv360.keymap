@@ -17,7 +17,7 @@
 / {
     behaviors {
       tog_on: toggle_layer_on_only {
-          compatible = "zmk,behavior-toggle-layer";
+          compatible = "zmk,behavior-layer-toggle";
           #binding-cells = <1>;
           display-name = "Layer On";
           toggle-mode = "on";
@@ -25,7 +25,7 @@
       };
 
       tog_off: toggle_layer_off_only {
-          compatible = "zmk,behavior-toggle-layer";
+          compatible = "zmk,behavior-layer-toggle";
           #binding-cells = <1>;
           display-name = "Layer Off";
           toggle-mode = "off";
