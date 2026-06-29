@@ -126,6 +126,7 @@
 
       #include "macros.dtsi"
       #include "hu_mac.dtsi"
+      #include "hu_win.dtsi"
       #include "version.dtsi"
 
       hm: homerow_mods {
