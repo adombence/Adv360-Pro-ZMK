@@ -16,31 +16,14 @@
 
 / {
     behaviors {
-      tog_on: toggle_layer_on_only {
-          compatible = "zmk,behavior-layer-toggle";
-          #binding-cells = <1>;
-          display-name = "Layer On";
-          toggle-mode = "on";
-          locking;
-      };
-
-      tog_off: toggle_layer_off_only {
-          compatible = "zmk,behavior-layer-toggle";
-          #binding-cells = <1>;
-          display-name = "Layer Off";
-          toggle-mode = "off";
-          locking;
-      };
-
       select_profile_1: select_profile_1 {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           wait-ms = <20>;
           tap-ms = <20>;
           bindings =
-              <&macro_tap &bt BT_SEL 0>,
-              <&macro_tap &tog_off WIN_DEFAULT>;
-          label = "SELECT_PROFILE_1";
+              <&bt BT_SEL 0>,
+              <&to BASE>;
           display-name = "Select Profile 1";
       };
 
@@ -50,9 +33,8 @@
           wait-ms = <20>;
           tap-ms = <20>;
           bindings =
-              <&macro_tap &bt BT_SEL 1>,
-              <&macro_tap &tog_on WIN_DEFAULT>;
-          label = "SELECT_PROFILE_2";
+              <&bt BT_SEL 1>,
+              <&to WIN_DEFAULT>;
           display-name = "Select Profile 2";
       };
 
@@ -61,12 +43,9 @@
           #binding-cells = <0>;
           wait-ms = <20>;
           tap-ms = <20>;
-
           bindings =
-              <&macro_tap &bt BT_SEL 2>,
-              <&macro_tap &tog_off WIN_DEFAULT>;
-
-          label = "SELECT_PROFILE_3";
+              <&bt BT_SEL 2>,
+              <&to BASE>;
           display-name = "Select Profile 3";
       };
 
@@ -75,12 +54,9 @@
           #binding-cells = <0>;
           wait-ms = <20>;
           tap-ms = <20>;
-
           bindings =
-              <&macro_tap &bt BT_SEL 3>,
-              <&macro_tap &tog_off WIN_DEFAULT>;
-
-          label = "SELECT_PROFILE_4";
+              <&bt BT_SEL 3>,
+              <&to BASE>;
           display-name = "Select Profile 4";
       };
 
@@ -89,12 +65,9 @@
           #binding-cells = <0>;
           wait-ms = <20>;
           tap-ms = <20>;
-
           bindings =
-              <&macro_tap &bt BT_SEL 4>,
-              <&macro_tap &tog_off WIN_DEFAULT>;
-
-          label = "SELECT_PROFILE_5";
+              <&bt BT_SEL 4>,
+              <&to BASE>;
           display-name = "Select Profile 5";
       };
 
@@ -200,7 +173,7 @@
         &trans &trans        &trans &win_e_acute &trans &trans &trans                                                           &none  &trans &win_u_acute  &win_i_acute &win_o_acute &win_o_umlaut        &trans
         &trans &win_a_acute  &trans &trans       &trans &trans &none           &trans &trans &trans &trans                      &none  &trans &trans        &trans       &trans       &win_o_hungarumlaut  &win_u_hungarumlaut
         &trans &trans        &trans &trans       &trans &trans                        &trans &trans                                    &trans &trans        &trans       &trans       &trans               &trans
-        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &mac_u_umlaut        &trans
+        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &win_u_umlaut        &trans
       >;
     };
     win_default_layer {
