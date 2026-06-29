@@ -11,9 +11,93 @@
 #define FN 2
 #define MOD 3
 #define HU_MAC 4
+#define HU_WIN 5
+#define WIN_DEFAULT 6
 
 / {
     behaviors {
+      tog_on: toggle_layer_on_only {
+          compatible = "zmk,behavior-toggle-layer";
+          #binding-cells = <1>;
+          display-name = "Layer On";
+          toggle-mode = "on";
+          locking;
+      };
+
+      tog_off: toggle_layer_off_only {
+          compatible = "zmk,behavior-toggle-layer";
+          #binding-cells = <1>;
+          display-name = "Layer Off";
+          toggle-mode = "off";
+          locking;
+      };
+
+      select_profile_1: select_profile_1 {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <20>;
+          tap-ms = <20>;
+          bindings =
+              <&macro_tap &bt BT_SEL 0>,
+              <&macro_tap &tog_off WIN_DEFAULT>;
+          label = "SELECT_PROFILE_1";
+          display-name = "Select Profile 1";
+      };
+
+      select_profile_2: select_profile_2 {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <20>;
+          tap-ms = <20>;
+          bindings =
+              <&macro_tap &bt BT_SEL 1>,
+              <&macro_tap &tog_on WIN_DEFAULT>;
+          label = "SELECT_PROFILE_2";
+          display-name = "Select Profile 2";
+      };
+
+      select_profile_3: select_profile_3 {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <20>;
+          tap-ms = <20>;
+
+          bindings =
+              <&macro_tap &bt BT_SEL 2>,
+              <&macro_tap &tog_off WIN_DEFAULT>;
+
+          label = "SELECT_PROFILE_3";
+          display-name = "Select Profile 3";
+      };
+
+      select_profile_4: select_profile_4 {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <20>;
+          tap-ms = <20>;
+
+          bindings =
+              <&macro_tap &bt BT_SEL 3>,
+              <&macro_tap &tog_off WIN_DEFAULT>;
+
+          label = "SELECT_PROFILE_4";
+          display-name = "Select Profile 4";
+      };
+
+      select_profile_5: select_profile_5 {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <20>;
+          tap-ms = <20>;
+
+          bindings =
+              <&macro_tap &bt BT_SEL 4>,
+              <&macro_tap &tog_off WIN_DEFAULT>;
+
+          label = "SELECT_PROFILE_5";
+          display-name = "Select Profile 5";
+      };
+
       hu_lt: hu_layer_tap {
         compatible = "zmk,behavior-hold-tap";
         label = "HU_LAYER_TAP";
@@ -71,10 +155,10 @@
     keypad {
       display-name = "Kp";
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+        &kp EQUAL &kp N1     &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp TAB   &kp Q      &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+        &kp ESC   &kp A      &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+        &kp LSHFT &kp Z      &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
         &mo FN     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0             &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo FN
       >;
     };
@@ -108,5 +192,26 @@
         &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &mac_u_umlaut        &trans
       >;
     };
+    hu_win_layer {
+      display-name = "Hu win";
+      bindings = <
+        &trans &trans        &trans &trans       &trans &trans &trans                                                           &trans &trans &trans        &trans       &trans       &trans               &trans
+        &trans &trans        &trans &win_e_acute &trans &trans &trans                                                           &none  &trans &win_u_acute  &win_i_acute &win_o_acute &win_o_umlaut        &trans
+        &trans &win_a_acute  &trans &trans       &trans &trans &none           &trans &trans &trans &trans                      &none  &trans &trans        &trans       &trans       &win_o_hungarumlaut  &win_u_hungarumlaut
+        &trans &trans        &trans &trans       &trans &trans                        &trans &trans                                    &trans &trans        &trans       &trans       &trans               &trans
+        &trans &trans        &trans &trans       &trans                 &trans &trans &trans &trans &trans &trans                             &trans        &trans       &trans       &mac_u_umlaut        &trans
+      >;
+    };
+    win_default_layer {
+      display-name = "Win Default layer";
+      bindings = <
+        &kp EQUAL &kp N1    &kp N2               &kp N3   &kp N4     &kp N5 &tog KEYPAD                                                                   &mo 3 &kp N6 &kp N7 &kp N8      &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W                &kp E    &kp R      &kp T  &none                                                                         &none &kp Y  &kp U  &kp I       &kp O    &kp P    &kp BSLH
+        &kp ESC   &kp A     &kp S                &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI &kp RCTRL                         &none &kp H  &kp J  &kp K       &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X                &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                                  &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo FN    &kp GRAVE &hu_caps HU_WIN CAPS &kp LEFT &kp RIGHT                  &kp BSPC &kp DEL &kp END  &kp PG_DN &kp ENTER &kp SPACE                    &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
+      >;
+    }
+
   };
 };
